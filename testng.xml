@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+  <test thread-count="5" name="TestNGDemo">
+  <groups>
+  <!-- MetaGroups example is given below as define tag where we define set of groups as one name 
+  		We can also write regex for group name like 'platform.*' which will run all groups named platform....-->
+      <define name = "Package">
+      	<include name = "Regression">
+      	</include>
+      	<include name = "Demo">
+      	</include>
+      </define>
+      <run>
+      <include name = "Package">
+      </include>
+      </run>
+  </groups>
+    <classes>
+      <class name="com.vijay.jdk8related.TestNGDemo"/>
+    </classes>
+  </test> <!-- TestNGDemo -->
+</suite> <!-- TestSuite -->

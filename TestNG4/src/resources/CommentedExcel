@@ -1,0 +1,36 @@
+   //    public static Object[] readExcelFile(String fileName, String sheetName) throws IOException {
+//
+//        ArrayList<Object[]>  excelData=new ArrayList<Object[]>();
+//        //**** Opening an excel
+//        File fileOpen=new File(System.getProperty("user.dir")+"/src/resources/TestDataSCN.xlsx");
+//        //****Reading an Excel File
+//        FileInputStream fileReader=new FileInputStream(fileOpen);
+//        //****Create object of XSSFWorkbook class
+//        Workbook workbook=null;
+//
+//        workbook=new XSSFWorkbook(fileReader);
+//        scenariosheet=workbook.getSheet(sheetName);
+//        //***Find number of rows in excel file
+//        int rowCount=scenariosheet.getLastRowNum()- scenariosheet.getFirstRowNum();
+//        System.out.println(rowCount);
+//
+//        //***Created Array of Values
+//        Object[][] data = new Object[scenariosheet.getLastRowNum()][scenariosheet.getRow(0).getLastCellNum()];
+//
+//        for (int i=1;i<rowCount+1;i++){
+//            Row row=scenariosheet.getRow(i);
+//
+//            for (int j=1;j<row.getLastCellNum();j++){
+//
+//                if(row.getCell(j).getCellType() == Cell.CELL_TYPE_NUMERIC) {
+//                    data[i][j]=row.getCell(j).getNumericCellValue();
+//                }
+//                else if (row.getCell(j).getCellType() == Cell.CELL_TYPE_STRING){
+//                    data[i][j]=row.getCell(j).getStringCellValue();
+//              }
+//            }
+//            System.out.println();
+//        }
+//
+//       return data;
+//    }

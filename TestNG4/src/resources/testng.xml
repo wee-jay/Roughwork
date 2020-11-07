@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="QA TestNG Automation">
+    <listeners>
+        <listener class-name="reportlistner.ExtentReportListner"></listener>
+    </listeners>
+    <test name="B2C Automation Test">
+        <classes>
+            <class name="steps.DashboardTest"></class>
+            <class name="steps.HealthModuleSelectTest"></class>
+            <class name="base.CloseBrowser"></class>
+        </classes>
+    </test>
+</suite>
